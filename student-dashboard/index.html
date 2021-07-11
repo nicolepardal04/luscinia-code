@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Owl-Carousel Slider | CodingNepal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+
+</head>
+
+<body style="background-color: #212529;">
+  <style>
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      background-color: #f5f5f5;
+    }
+
+    @media (min-width: 992px) {
+      .my-lg-0 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+
+
+    }
+
+    .navbar {
+      margin-top: 20px;
+    }
+  </style>
+
+  <!-- Navbar code -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="images/luscinia.png" alt="" width="25" height="24" class="d-inline-block align-text-top" style="margin-right: 4%;">
+        <strong>Aristotle</strong>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="long-thing" style="margin-right: 60%;">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Information
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="notes.html">Parents</a></li>
+                <li><a class="dropdown-item" href="labs.html">Teachers</a></li>
+                <li><a class="dropdown-item" href="textbook.html"> Students </a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Schools </a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Sponsors </a></li>
+            </li>
+          </ul>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About Luscinia</a>
+          </li>
+        </div>
+        <li class="nav-item">
+          <button class="btn btn-outline-secondary login" type="submit">Login</button>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header on top -->
+  <h6 style="color: white; margin-left: 11%; margin-top: 7%; margin-bottom: 1%;"><strong>Quick view <h6 style="color: grey; position: absolute; display: inline-block; padding-left: 2%; ">Course view </strong></h6>
+  </h6>
+  <hr style="color: white; margin-left: 10%;">
+
+
+  <!-- Owl carousel for cards -->
+  <div class="wrapper">
+    <div class="carousel owl-carousel">
+
+
+
+      <!-- First Card on carousel: Social Studies -->
+      <div class="col-lg-3 col-md-12 col-sm-12" style="margin: 2%;">
+        <div class="card white" style="width: 25rem; height: 24rem; border-radius: 12px; border: none;">
+          <div class="blue-streak stack-top" style="background-color: #62bd69;">
+          </div>
+          <div class="card-body content white" style="">
+            <div class="dates" style="float: right; display: inline-block;">
+              <h5 class="date">Tuesday</h5>
+              <br>
+              <h6 class="date-2" style="font-size: 10px; float: right; line-height: 1px;"> Sep 1, 2020</h6>
+            </div>
+            <div class="card-title white">
+              <h5 style="padding-left: 5%; "><strong>Class Notice</strong>
+                <br>
+                <h6 class="card-subtitle mb-2" style="padding-left: 5%">Social Studies 9
+            </div>
+            <br>
+            <p style="font-size: 13px; margin-bottom: 0px;" class="card-text declaration">The unanimous Declaration of the thirtheen united states od America. When in the course of human events,
+              it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume
+              among the powers of the earth, the seperate and equal station to which the laws of nature and of nature's god entitle them, a decent respect to the opinions of mankind reauires that they should declare the...</p>
+            <br>
+            <div class="d-flex justify-content-center" style="padding-bottom: 2%; padding-top: 0px;">
+              <button type="button" class="btn btn-green text-center;" style="background-color:#62bd69; color: white;"><strong>View</strong></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Second Card on carousel: Chemistry -->
+      <div class="col-lg-3 col-md-12 col-sm-12" style="margin: 2%;">
+        <div class="card" style="width: 25rem; height: 24rem; border-radius: 12px; border: none;">
+          <div class="blue-streak" style="background-color: #E3242B;">
+          </div>
+          <div class="card-body content">
+            <div class="card-title">
+              <h5 style="padding-left: 5%;"><strong>Stoichiometry Unit Quiz</strong>
+                <br>
+                <h6 class="card-subtitle mb-2" style="padding-left: 5%">Chemistry 9
+            </div>
+            <br>
+            <p style="font-size: 13px; margin-bottom: 0px;" class="card-text declaration">
+            <div class="dates" style="float: right; display: inline-block; padding-right: 5%;">
+              <h6 class="date" style="padding-top: 80%;">Monday</h6>
+              <br>
+              <h6 class="date-2" style="font-size: 10px; float: right; line-height: 1px;"> Sep 1, 2020</h6>
+              <br>
+              <h6 class="date-2" style="font-size: 17px; float: right; color: #75d705; line-height: 30px;"><strong>4 Days</strong></h6>
+            </div>
+            <p class="headings"> <strong>Time Limit</strong></p>
+            <p class="headings"><strong>Number of Questions</strong></p>
+            <p class="headings"><strong>Topic of Asessment</strong></p>
+            <p class="headings"><strong>Notes from Teacher</strong></p>
+            <br>
+            <br>
+            <div class="d-flex justify-content-center" style="padding-bottom: 2%; padding-top: 2%;">
+              <button type="button" class="btn btn-green text-center;" style="background-color:#0492C3; color: white;"><strong>Start</strong></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- Third card on carousel: History -->
+      <div class="col-lg-3 col-md-12 col-sm-12" style="margin: 2%;">
+        <div class="card" style="width: 25rem; height: 24rem; border-radius: 12px; border: none;">
+          <div class="blue-streak" style="background-color: #0492C3;">
+          </div>
+          <div class="card-body content">
+            <div class="card-title">
+              <h5 style="padding-left: 5%;"><strong>The History of Emancipation in t...</strong>
+                <br>
+                <h6 class="card-subtitle mb-2" style="padding-left: 5%">Social Studies 9
+            </div>
+            <br>
+            <p style="font-size: 13px; margin-bottom: 0px;" class="card-text declaration">
+            <div class="dates" style="float: right; display: inline-block; padding-right: 5%;">
+              <h6 class="date" style="font-size: 15px; float: right; margin-top: 0px; padding-top: 80%;">Monday</h6>
+              <br>
+              <h6 class="date-2" style="font-size: 10px; float: right; line-height: 1px;"> Sep 7, 2020</h6>
+              <br>
+              <h6 class="date-2" style="font-size: 17px; float: right; color: #75d705; line-height: 30px;"><strong>4 Days</strong></h6>
+            </div>
+            <!-- Timeline/Progress Bar code -->
+            <ul id="progress">
+              <li class="li-class">
+                <div class="node black"></div>
+                <p style="color: black; margin-bottom: 0;">Lesson Resource</p>
+              </li>
+              <li class="li-class">
+                <div class="divider black"></div>
+              </li>
+              <li class="li-class">
+                <div class="node black"></div>
+                <p style="color: black; margin-bottom: 0;"> Progress Quiz</p>
+              </li>
+              <li class="li-class">
+                <div class="divider black"></div>
+              </li>
+              <li class="li-class">
+                <div class="node black"></div>
+                <p style="color: black; margin-bottom: 0;">Lesson Resource</p>
+              </li>
+              <li class="li-class">
+                <div class="divider black"></div>
+              </li>
+              <li class="li-class">
+                <div class="node black"></div>
+                <p style="color: black; margin-bottom: 0;">Lesson Resource</p>
+              </li>
+              <li class="li-class">
+                <div class="divider black"></div>
+              </li>
+              <li class="li-class">
+                <div class="node black"></div>
+                <p style="color: black;">Written Assignement</p>
+              </li>
+            </ul>
+
+
+<!-- JS for the progress bar -->
+            <script>
+              var list = document.getElementById('progress'),
+                next = document.getElementById('next'),
+                clear = document.getElementById('clear'),
+                children = list.children,
+                completed = 0;
+
+              // simulate activating a node
+              next.addEventListener('click', function() {
+
+                // count the number of completed nodes.
+                completed = (completed === 0) ? 1 : completed + 2;
+                if (completed > children.length) return;
+
+                // for each node that is completed, reflect the status
+                // and show a green color!
+                for (var i = 0; i < completed; i++) {
+                  children[i].children[0].classList.remove('grey');
+                  children[i].children[0].classList.add('green');
+
+                  // if this child is a node and not divider,
+                  // make it shine a little more
+                  if (i % 2 === 0) {
+                    children[i].children[0].classList.add('activated');
+                  }
+                }
+
+              }, false);
+
+              // clear the activated state of the markers
+              clear.addEventListener('click', function() {
+                for (var i = 0; i < children.length; i++) {
+                  children[i].children[0].classList.remove('green');
+                  children[i].children[0].classList.remove('activated');
+                  children[i].children[0].classList.add('grey');
+                }
+                completed = 0;
+              }, false);
+            </script>
+
+            <br>
+            <div class="d-flex justify-content-center" style="padding-bottom: 2%; padding-top: 2%;">
+              <button type="button" class="btn btn-green text-center;" style="background-color:#0492C3; color: white;"><strong>Start</strong></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Fourth card on carousel: Social Studies 2 -->
+      <div class="col-lg-3 col-md-12 col-sm-12" style="margin: 2%;">
+        <div class="card white" style="width: 25rem; height: 24rem; border-radius: 12px; border: none;">
+
+          <div class="blue-streak stack-top" style="background-color: #62bd69;">
+          </div>
+          <div class="card-body content white" style="">
+            <div class="dates" style="float: right; display: inline-block;">
+              <h5 class="date" style="font-size: 15px; float: right; margin-top: 0px;">Tuesday</h5>
+              <br>
+              <h6 class="date-2" style="font-size: 10px; float: right; line-height: 1px;"> Sep 1, 2020</h6>
+            </div>
+
+            <div class="card-title white">
+              <h5 style="padding-left: 5%; "><strong>Class Notice</strong>
+                <br>
+                <h6 class="card-subtitle mb-2" style="padding-left: 5%">Social Studies 9
+            </div>
+            <br>
+            <p style="font-size: 13px; margin-bottom: 0px;" class="card-text declaration">The unanimous Declaration of the thirtheen united states od America. When in the course of human events,
+              it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume
+              among the powers of the earth, the seperate and equal station to which the laws of nature and of nature's god entitle them, a decent respect to the opinions of mankind reauires that they should declare the...</p>
+            <br>
+            <div class="d-flex justify-content-center" style="padding-bottom: 2%; padding-top: 0px;">
+              <button type="button" class="btn btn-green text-center;" style="background-color:#62bd69; color: white;"><strong>View</strong></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-12 col-sm-12" style="margin: 2%;">
+        <div class="card" style="width: 25rem; height: 24rem; border-radius: 12px; border: none;">
+          <div class="blue-streak" style="background-color: #0492C3;">
+          </div>
+          <div class="card-body content">
+            <div class="card-title">
+              <h5 style="padding-left: 5%;"><strong>Linear Algebra</strong>
+                <br>
+                <h6 class="card-subtitle mb-2" style="padding-left: 5%">Math 9
+            </div>
+            <br>
+            <p style="font-size: 13px; margin-bottom: 0px;" class="card-text declaration">
+            <div class="dates" style="float: right; display: inline-block; padding-right: 5%;">
+              <h6 class="date" style="font-size: 15px; float: right; margin-top: 0px; padding-top: 80%;">Monday</h6>
+              <br>
+              <h6 class="date-2" style="font-size: 10px; float: right; line-height: 1px;"> Sep 7, 2020</h6>
+              <br>
+              <h6 class="date-2" style="font-size: 17px; float: right; color: red; line-height: 30px;"><strong>4 Hours</strong></h6>
+            </div>
+            <ul id="progress">
+              <li class="li-class">
+                <div class="node grey"></div>
+                <p style="color: grey; margin-bottom: 0;">Lesson Resource</p>
+              </li>
+              <li class="li-class">
+                <div class="divider grey"></div>
+              </li>
+              <li class="li-class">
+                <div class="node grey"></div>
+                <p style="color: grey; margin-bottom: 0;"> Progress Quiz</p>
+              </li>
+              <li class="li-class">
+                <div class="divider grey"></div>
+              </li>
+              <li class="li-class">
+                <div class="node blue"></div>
+                <p style="color: #03a9f4; margin-bottom: 0;">Lesson Resource</p>
+              </li>
+              <li class="li-class">
+                <div class="divider black"></div>
+              </li>
+              <li class="li-class">
+                <div class="node black"></div>
+                <p style="color: black; margin-bottom: 0;">Lesson Resource</p>
+              </li>
+              <li class="li-class">
+                <div class="divider black"></div>
+              </li>
+              <li class="li-class">
+                <div class="node black"></div>
+                <p style="color: black;">Written Assignement</p>
+              </li>
+            </ul>
+
+
+            <script>
+              var list = document.getElementById('progress'),
+                next = document.getElementById('next'),
+                clear = document.getElementById('clear'),
+                children = list.children,
+                completed = 0;
+
+              // simulate activating a node
+              next.addEventListener('click', function() {
+
+                // count the number of completed nodes.
+                completed = (completed === 0) ? 1 : completed + 2;
+                if (completed > children.length) return;
+
+                // for each node that is completed, reflect the status
+                // and show a green color!
+                for (var i = 0; i < completed; i++) {
+                  children[i].children[0].classList.remove('grey');
+                  children[i].children[0].classList.add('green');
+
+                  // if this child is a node and not divider,
+                  // make it shine a little more
+                  if (i % 2 === 0) {
+                    children[i].children[0].classList.add('activated');
+                  }
+                }
+
+              }, false);
+
+              // clear the activated state of the markers
+              clear.addEventListener('click', function() {
+                for (var i = 0; i < children.length; i++) {
+                  children[i].children[0].classList.remove('green');
+                  children[i].children[0].classList.remove('activated');
+                  children[i].children[0].classList.add('grey');
+                }
+                completed = 0;
+              }, false);
+            </script>
+            <br>
+            <div class="d-flex justify-content-center" style="padding-bottom: 2%; padding-top: 2%;">
+              <button type="button" class="btn btn-green text-center;" style="background-color:#0492C3; color: white;"><strong>Start</strong></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    $(".carousel").owlCarousel({
+      margin: 20,
+      loop: false,
+      rewind: true,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        600: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 3,
+          nav: false
+        }
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
