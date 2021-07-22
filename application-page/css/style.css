@@ -1,0 +1,331 @@
+
+#first-part {
+  background-color: #212529;
+}
+
+.description {
+  background-color: #18191A;
+  border-radius: 12px;
+  margin: 3% 15% 3% 15%;
+}
+@media (max-width: 991.98px) {
+.description {
+  margin: 1% 2% 1% 2%;
+  background-color: #18191A;
+  border-radius: 10px;
+
+}
+ }
+
+.short-answer{
+  margin: 0 5% 0 5%;
+}
+
+
+
+
+
+
+.title {
+  font-size: 35px;
+  color: white;
+  padding: 3% 0 0 7%;
+}
+
+.application-description {
+  padding: 2% 7% 3% 7%;
+  font-size: 17px;
+  color: white;
+}
+
+.main-info {
+  background-color: #18191A;
+  border-radius: 10px;
+  margin: 1% 15% 1% 15%;
+}
+
+
+@media (max-width: 991.98px) {
+.main-info {
+  margin: 1% 2% 1% 2%;
+  background-color: #18191A;
+  border-radius: 10px;
+
+}
+ }
+
+
+
+
+
+
+
+.personal {
+  color: white;
+  padding: 3% 0 3% 6%;
+  font-size: 30px;
+}
+
+.half-half {
+  background-color: #212529;
+  color: white;
+  border-radius: 7px;
+  width: 40%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2 small {
+  font-weight: normal;
+  color: white;
+  display: block;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  color: #53B2C8;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  padding: 0.2%;
+}
+
+/* form starting stylings ------------------------------- */
+.group {
+  position: relative;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 45%;
+  border: none;
+  border-bottom: 1px solid #757575;
+  font-size: 10px;
+  display: inline-block;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  display: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  font-size: 16px;
+  display: inline-block z-index: 1;
+
+}
+
+/* active state */
+input:focus~label, input:valid~label {
+  top: -20px;
+  font-size: 14px;
+  color: white;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 480px;
+}
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: white;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%; f
+}
+
+/* active state */
+input:focus~.bar:before, input:focus~.bar:after {
+  width: 50%;
+}
+
+
+@media (max-width: 991.98px) {
+  .short-answer {
+    align-items: center;
+    display: block;
+  }
+
+}
+
+.row{
+  margin-bottom: 2%;
+}
+
+.special{
+  padding-left: 10%;
+
+}
+
+
+  #names-inline{
+    align-items: center;
+
+    display: block;
+  }
+  #names2-inline{
+    align-items: center;
+    padding: 100px 0 130px 0;
+    display: block;
+    height: 100px;
+  }
+
+
+/* active state */
+input:focus~.highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: white;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@-moz-keyframes inputHighlighter {
+  from {
+    background: white;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: white;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.grey-text{
+  font-size: 13px;
+  color: #cccccc;
+  margin-top: 2%;
+}
+.text-area{
+  width: 100%;
+  background-color: #212529;
+  border-radius: 12px;
+  position: relative;
+  color: white;
+
+}
+
+th{
+  text-align: center;
+  color: white;
+}
+table, tr, td, thead, th{
+
+  border: 0;
+  border-width: 0;
+  border-bottom-width: 0;
+  font-size: 15px;
+}
+
+@media (max-width: 991.98px) {
+table, tr, td, thead, th {
+font-size: 13px;
+}
+ }
+
+
+.table>:not(caption)>*>* {
+  border-bottom-width: 0;}
+
+
+  .table-head{
+    border: none;
+    align-items: center;
+  text-align: center;
+
+  }
+
+  .form-range{
+    margin: 5% 0 5% 0;
+    border: none;
+    color: grey;
+    background-color: grey;
+  }
+
+
+  .text-area2{
+    width: 90%;
+    background-color: #212529;
+    border-radius: 12px;
+    position: relative;
+    color: white;
+    margin-left: 5%;
+}
+
+.margins{
+  margin-left: 7%;
+    margin-right: 7%;
+}
+
+
+.long-answers {
+  margin: 1% 5% 1% 5%;
+}
+
+.four-years{
+  float: right;
+  border: none;
+}
+@media (max-width: 991.98px) {
+.four-years {
+float: left;
+}
+ }
