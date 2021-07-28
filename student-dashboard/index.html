@@ -5,11 +5,9 @@
 <head>
   <meta charset="utf-8">
   <title>Responsive Owl-Carousel Slider | CodingNepal</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
@@ -20,29 +18,6 @@
 </head>
 
 <body style="background-color: #212529;">
-  <style>
-    .footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 60px;
-      line-height: 60px;
-      background-color: #f5f5f5;
-    }
-
-    @media (min-width: 992px) {
-      .my-lg-0 {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-      }
-
-
-    }
-
-    .navbar {
-      margin-top: 20px;
-    }
-  </style>
 
   <!-- Navbar code -->
   <nav class="navbar navbar-expand-lg navbar-dark">
@@ -102,13 +77,15 @@
 
 
   <!-- Owl carousel for cards -->
-  <div class="wrapper">
-    <div class="carousel owl-carousel">
+  <div class="container-fluid horizontal-scroll-wrapper">
+
+<div class="row">
+
 
 
 
       <!-- First Card on carousel: Social Studies -->
-      <div class="col-lg-3 col-md-12 col-sm-12" style="margin: 2%;">
+      <div class="col-lg-3 col-md-12 col-sm-12" style="margin: 2% 2% 2% 10%;">
         <div class="card white" style="width: 25rem; height: 24rem; border-radius: 12px; border: none;">
           <div class="blue-streak stack-top" style="background-color: #62bd69;">
           </div>
@@ -227,7 +204,6 @@
             </ul>
 
 
-<!-- JS for the progress bar -->
             <script>
               var list = document.getElementById('progress'),
                 next = document.getElementById('next'),
@@ -276,8 +252,12 @@
         </div>
       </div>
 
+    </div>
+    <div class="row">
+
+
 <!-- Fourth card on carousel: Social Studies 2 -->
-      <div class="col-lg-3 col-md-12 col-sm-12" style="margin: 2%;">
+      <div class="col-lg-3 col-md-12 col-sm-12" style="margin: 2% 2% 2% 10%;">
         <div class="card white" style="width: 25rem; height: 24rem; border-radius: 12px; border: none;">
 
           <div class="blue-streak stack-top" style="background-color: #62bd69;">
@@ -305,6 +285,7 @@
           </div>
         </div>
       </div>
+
 
 
       <div class="col-lg-3 col-md-12 col-sm-12" style="margin: 2%;">
@@ -362,82 +343,23 @@
             </ul>
 
 
-            <script>
-              var list = document.getElementById('progress'),
-                next = document.getElementById('next'),
-                clear = document.getElementById('clear'),
-                children = list.children,
-                completed = 0;
-
-              // simulate activating a node
-              next.addEventListener('click', function() {
-
-                // count the number of completed nodes.
-                completed = (completed === 0) ? 1 : completed + 2;
-                if (completed > children.length) return;
-
-                // for each node that is completed, reflect the status
-                // and show a green color!
-                for (var i = 0; i < completed; i++) {
-                  children[i].children[0].classList.remove('grey');
-                  children[i].children[0].classList.add('green');
-
-                  // if this child is a node and not divider,
-                  // make it shine a little more
-                  if (i % 2 === 0) {
-                    children[i].children[0].classList.add('activated');
-                  }
-                }
-
-              }, false);
-
-              // clear the activated state of the markers
-              clear.addEventListener('click', function() {
-                for (var i = 0; i < children.length; i++) {
-                  children[i].children[0].classList.remove('green');
-                  children[i].children[0].classList.remove('activated');
-                  children[i].children[0].classList.add('grey');
-                }
-                completed = 0;
-              }, false);
-            </script>
             <br>
             <div class="d-flex justify-content-center" style="padding-bottom: 2%; padding-top: 2%;">
               <button type="button" class="btn btn-green text-center;" style="background-color:#0492C3; color: white;"><strong>Start</strong></button>
             </div>
           </div>
         </div>
-      </div>
+
+</div>
 
     </div>
   </div>
-  <script>
-    $(".carousel").owlCarousel({
-      margin: 20,
-      loop: false,
-      rewind: true,
-      autoplay: true,
-      autoplayTimeout: 4000,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1,
-          nav: false
-        },
-        600: {
-          items: 2,
-          nav: false
-        },
-        1000: {
-          items: 3,
-          nav: false
-        }
-      }
-    });
-  </script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
+
+</html>
 
 </html>
