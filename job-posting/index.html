@@ -1,298 +1,235 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
+​
 <head>
-
+​
   <meta charset="utf-8">
-
+​
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--Link CSS -->
-  <link rel="stylesheet" href="css/styles.css">
   <!--Link Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <title>Hiring Service</title>
 </head>
-
+​
 <style>
-  body{
+  .br-10 {
+    border-radius: 1rem;
+  }
+​
+  body {
     font-family: 'Roboto', sans-serif;
   }
-</style>
-
-<body>
-  <section class="section-name">
-
-    <body style="background-color: #212529;">
-      <style>
-          .footer {
-              position: absolute;
-              bottom: 0;
-              width: 100%;
-              height: 60px;
-              line-height: 60px;
-              background-color: #f5f5f5;
-          }
-
-          @media (min-width: 992px){
-    .my-lg-0 {
-      margin-top: 0!important;
-      margin-bottom: 0!important;
-    }
-
-    .navbar-expand-lg .navbar-nav {
-      flex-direction: row;
-    }
-    }
-    .navbar{
-    margin-top: 15px;
-    }
-
-@media (max-width: 991.98px) {
-  .row{
-    padding: 1%;
-    display: block;
-    align-items: center;
-
+​
+  .search {
+    background-color: #7f7f7f;
   }
-
-
-
-}
-      </style>
-
-
-
-
-            <nav class="navbar navbar-expand-lg navbar-dark">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                  <img class="logo" src="images/luscinia.png" alt="" width="25" height="24" class="d-inline-block align-text-top" style="margin: 4%;">
-                  <strong>Aristotle</strong>
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="long-thing" style="margin-right: 60%;">
-
-
-
-                  <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Information
-                      </a>
-
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="notes.html">Parents</a></li>
-                        <li><a class="dropdown-item" href="labs.html">Teachers</a></li>
-                        <li><a class="dropdown-item" href="textbook.html"> Students </a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Schools </a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sponsors </a></li>
-                    </li>
-                  </ul>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About Luscinia</a>
-                  </li>
+​
+  .search::placeholder {
+    color: white;
+    opacity: 1;
+  }
+​
+  .searchig {
+    border-radius: 0.5rem;
+  }
+​
+  .searchig>* {
+    border: 0;
+  }
+​
+  .search-form {
+    background-color: #7f7f7f;
+  }
+</style>
+​
+<body class="bg-dark">
+​
+  <div class="container">
+​
+    <div class="container-fluid p-3">
+      <div class="container-fluid">
+        <!-- Title Container -->
+        <div class="my-3">
+          <span class="fs-3 text-white">Luscinia Job Board</span>
+        </div>
       </div>
-                  <li class="nav-item">
-                    <button class="btn btn-outline-secondary login" type="submit">Login</button>
-                  </li>
-
-
+      <div class="container-fluid">
+        <!-- Search Input Field Container -->
+        <div class="input-group mb-3 bg-secondary searchig">
+          <span class="input-group-text bg-secondary text-white">Search: </span>
+          <input type="text" class="form-control search" placeholder="Keywords" aria-label="Search Keywords" />
+          <button href="#" class="btn btn-primary" type="button">Filter</button>
+        </div>
+      </div>
+      <div class="container-fluid mt-2">
+        <!-- Sorting Filter Container -->
+        <p class="text-white text-decoration-none">
+          Sort By:
+          <a href="#" class="fw-bold   text-white text-decoration-none">Closing Date</a>
+          <a href="#" class="fw-normal text-white text-decoration-none">Salary</a>
+        </p>
+      </div>
+    </div>
+​
+    <div class="container-fluid">
+      <div class="row flex-row-reverse">
+        <div class="col-12 col-lg-7 col-xl-8">
+​
+          <div class="card mb-5 br-10">
+            <div class="card-body">
+              <div class="row mb-2 text-center">
+                <h3 class="card-title mb-2">Web Development Intern</h3>
+              </div>
+              <div class="row mb-2">
+                <div class="col text-start">
+                  <span>Vancouver, BC</span>
+                </div>
+                <div class="col text-end">
+                  <span class="text-primary">Remote Position</span>
                 </div>
               </div>
-            </nav>
-
-      <div aria-hidden="true" aria-labelledby="loginModal" class="modal fade" id="loginmodal" role="dialog" tabindex="-1">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="loginModalLongTitle">Log In</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <form method="post" action="/login"><input type="hidden" name="_csrf" value="cf814f12-7dcf-4cd4-acd7-3908ac0fe8f0"/>
-                      <div class="modal-body container">
-                          <div class="form-group row">
-                              <label class="col-sm-2 col-form-label" for="email">E-Mail:</label>
-                              <div class="col-sm-10">
-                                  <input type="email" id="email" name="email" placeholder="user@example.com"
-                                         required="required" autofocus="autofocus">
-                              </div>
-                          </div>
-                          <div class="form-group row">
-                              <label class="col-sm-2 col-form-label" for="password">Password:</label>
-                              <div class="col-sm-10">
-                                  <input type="password" id="password" name="password" required="required">
-                              </div>
-                          </div>
-                      </div>
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="submit" class="btn btn-primary">Log In</button>
-                      </div>
-                  </form>
+              <div class="row mb-2">
+                <div class="col text-start">
+                  <span class="fw-bolder">$50 000/year</span>
+                </div>
+                <div class="col text-end">
+                  <span>Full Time (35hrs/wk)</span>
+                </div>
               </div>
-          </div>
-      </div>
-  </section>
-
-
-  <p class="main-title">Luscinia Job Board</p>
-  <div class="row">
-    <div class="col-lg-4 col-md-12 col-sm-12">
-
-      <div class="container-fluid tag-box">
-
-        <form class="form-input search" action="index.html" method="post" style="background-color: #7f7f7f;">
-
-
-
-          <label style="color: white; background-color: #a9a9a9; border-radius: 5px; padding: 3px;">Tags: </label>
-
-          <input class="answer" type="text" name="" value="">
-
-        </form>
-      </div>
-    </div>
-
-    <div class="col-lg-6 col-md-12 col-sm-12">
-      <form class="form-input search" action="index.html" method="post" style="background-color: #7f7f7f; width: 300px; height: 40px;">
-        <label style="color: white; background-color: #a9a9a9; border-radius: 5px; padding: 3px;""> Dates: </label>
-        <input type="date" name="" value="">
-        <button class="btn btn-outline-light submit" type="submit" style="position: absolute;"">Search</button>
-</form>
-
-
-    </div>
-
-
-
-
-
-    <br>
-    <br>
-    <!--Luscinia Web Designer Card one-->
-    <div class="container-fluid">
-
-
-      <div class="row">
-        <div class="col-lg-4 col-md-12 col-sm-12">
-          <p class="sort">Sort by: <strong>Due date, relevance</strong></p>
-          <div class="card w-100 small-card">
-            <div class="card-body">
-              <h3 class="card-title title">Luscinia Web Designer</h3>
-              <br>
-              <p class="remote">Remote Position</p>
-              <h6>Vancover, BC</h6>
-
-              <h6><strong>$50,000 a year</strong></h6>
-              <br>
-              <p class="card-text">You'll work with our entire creative team to help shape the look and feel of creative assets we're working on. Our broad Roster of clients ranges from international banks to major airlines of cosmotopolitan cities
-                on
-                the ocean- so you'll be exposed to a variety of different approaches. You'll...</p>
-
-              <p><em>Applications open for 3 more days</em></p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-6 col-md-12 col-sm-12">
-
-          <div class="card w-100 big-card">
-            <div class="card-body">
-              <h3 class="card-title title">Luscinia Web Designer</h3>
-              <br>
-              <p class="remote">Remote Position</p>
-              <h6>Vancover, BC</h6>
-
-              <h6><strong>$50,000 a year</strong></h6>
-              <br>
-
-              <h6 class=description>Internship, full-time</h6>
-              <h6 class=description>July 15-August 25</h6>
-              <br>
-              <button type="button" class="btn btn-success">Apply Now</button>
-
-              <br>
-              <br>
-              <p class="card-text">We're looking for talented designers who want to learn about a life crafting beautiful digital design. Whether you're a photo comping wizard, grid adhereing fanatic
-                or kening obsessed typographer, critical mass can introduce you to a career in design
-                <br>
-                <br>
-                You'll work with our entire creative team to help chape the look and feel of creative
-                assets we're working on. Our broad roster of clients ranges from international banks to major airlines to cosmopolitan cities on the ocean - so you'll be exposed to a variety of different design approaches.
-                <br>
-                <br>
-                We're firm believers in cross disipline thinking. So you'll also get the change to see how copywriters, strategists, art directors, technologeist and progect managers go about their buisness - and what that means to you
-                as a designer
-              </p>
-
-              <p>You will:</p>
-              <ul>
-                <li>Work with a mentor to design solutions that meet or exceed strategic objectives</li>
-                <li>collaborate with a team to create interactive design conceps </li>
-                <li>Have the opportunity to create mood boards storyboards, interactive page layouts, site grids and interace demos, photo retouching and enhancements; animated GIF's.</li>
-                <li>Build and maintain a team rapport with entire multidisplinary project team</li>
-              </ul>
-              <p><em>Applications open for 3 more days</em> </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-lg-4 col-md-12 col-sm-6">
-            <div class="card w-100 small-card">
-              <div class="card-body">
-                <h3 class="card-title title">Aristotle graphics Designer</h3>
-                <br>
-                <p class="remote">Remote Position</p>
-                <h6>Vancover, BC</h6>
-
-                <h6><strong>$50,000 a year</strong></h6>
-                <br>
-                <p class="card-text">
-                <ul>
-                  <li>Research audience preferences and discover current trends</li>
-                  <li>Create engaging text, image and video content</li>
-                  <li>Design posts to sustain readrs' curiousity and create buzz around new products</li>
-                </ul>
-
+              <div class="row mb-2">
+                <div class="col text-start">
+                  <span>Internship</span>
+                </div>
+                <div class="col text-end">
+                  <span>July 15</span> - <span>August 25</span>
+                </div>
+              </div>
+​
+              <div class="row my-3">
+                <div class="col">
+                  <button class="btn btn-success">Apply Now</button>
+                </div>
+              </div>
+​
+              <div class="card-text my-3">
+                <p>
+                  We're looking for talented designers who want to learn about a life crafting beautiful digital design.
+                  Whether you're a photo comping wizard, grid adhereing fanatic or kening obsessed typographer, critical
+                  mass can introduce you to a career in design
+                  <br>
+                  <br>
+                  You'll work with our entire creative team to help chape the look and feel of creative assets we're
+                  working on. Our broad roster of clients ranges from international banks to major airlines to
+                  cosmopolitan cities on the ocean - so you'll be exposed to a variety of different design approaches.
+                  <br>
+                  <br>
+                  We're firm believers in cross disipline thinking. So you'll also get the change to see how
+                  copywriters, strategists, art directors, technologeist and progect managers go about their buisness -
+                  and what that means to you as a designer
                 </p>
+​
+                <p>You will:</p>
+                <ul>
+                  <li>Work with a mentor to design solutions that meet or exceed strategic objectives</li>
+                  <li>collaborate with a team to create interactive design conceps </li>
+                  <li>Have the opportunity to create mood boards storyboards, interactive page layouts, site grids and
+                    interace demos, photo retouching and enhancements; animated GIF's.</li>
+                  <li>Build and maintain a team rapport with entire multidisplinary project team</li>
+                </ul>
               </div>
+​
+​
+            </div>
+            <div class="card-footer text-muted text-center fst-italic">
+              Applications close in <span>3</span> day<span>s</span>.
             </div>
           </div>
+​
         </div>
-
-        <br>
-        <br>
-
-
-        <!-- Javascript linking-->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+​
+        <div class="col-12 col-lg-5 col-xl-4">
+​
+          <div class="card mb-3 br-10">
+            <div class="card-body">
+              <div class="row mb-2">
+                <h3 class="card-title mb-2">Web Development Intern</h3>
+              </div>
+              <div class="row mb-2">
+                <div class="col text-start">
+                  <span>Vancouver, BC</span>
+                </div>
+                <div class="col text-end">
+                  <span class="text-primary">Remote Position</span>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  <span class="fw-bolder">$50 000/year</span>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  You'll work with our entire creative team to help shape the look and feel of creative assets we're
+                  working on. Our broad Roster of clients ranges from international banks to major airlines of
+                  cosmotopolitan cities on the ocean- so you'll be exposed to a variety of different approaches.
+                  You'll...
+                </div>
+              </div>
+              <a href="#" class="hidden stretched-link"></a>
+            </div>
+            <div class="card-footer text-muted text-center fst-italic">
+              Applications close in <span>3</span> day<span>s</span>.
+            </div>
+          </div>
+​
+          <div class="card mb-3 br-10">
+            <div class="card-body">
+              <div class="row mb-2">
+                <h3 class="card-title mb-2">Web Development Intern</h3>
+              </div>
+              <div class="row mb-2">
+                <div class="col text-start">
+                  <span>Vancouver, BC</span>
+                </div>
+                <div class="col text-end">
+                  <span class="text-primary">Remote Position</span>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  <span class="fw-bolder">$50 000/year</span>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  You'll work with our entire creative team to help shape the look and feel of creative assets we're
+                  working on. Our broad Roster of clients ranges from international banks to major airlines of
+                  cosmotopolitan cities on the ocean- so you'll be exposed to a variety of different approaches.
+                  You'll...
+                </div>
+              </div>
+              <a href="#" class="hidden stretched-link"></a>
+            </div>
+            <div class="card-footer text-muted text-center fst-italic">
+              Applications close in <span>3</span> day<span>s</span>.
+            </div>
+          </div>
+​
+        </div>
+​
+      </div>
+​
+    </div>
+  </div>
+​
+  <!-- Javascript linking-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
-
+​
 </html>
