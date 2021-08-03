@@ -4,202 +4,238 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Responsive Owl-Carousel Slider | CodingNepal</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Expanded-Card</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
+  <style>
+    body {
+      background-color: #212529;
+    }
+
+    .card {
+      border-radius: 10px;
+    }
+
+    /*The "view publication info" part */
+    .view,
+    .dropdown-text {
+      font-size: 11px;
+    }
+
+    .lesson-timeline, .lesson-resource {
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    hr {
+      color: grey;
+    }
+
+    .headlines,
+    .headlines-2 {
+      color: white;
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+
+    /* The code for the nodes (progress bars) */
+    .node {
+      height: 9px;
+      width: 9px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .divider {
+      height: 22px;
+      width: 2px;
+      margin-left: 4px;
+    }
+
+    .li-class p {
+      display: inline-block;
+
+    }
+
+    .li-class {
+      list-style: none;
+      line-height: 0;
+    }
+
+    .blue {
+      background-color: #03a9f4;
+    }
+
+    .black {
+      background-color: black;
+    }
+
+    .grey {
+      background-color: grey;
+    }
+
+    .white {
+      background-color: white;
+    }
+
+    /* Divider code ends */
+
+    .buttons-together {
+      display: flex;
+      justify-content: center;
+      padding-top: 200px;
+    }
+
+    .back,
+    .next {
+      background-color: #03a9f4;
+    }
+
+    .container-fluid{
+      margin-top: 5%
+    }
+
+    @media (max-width: 991.98px) {
+      .timeline {
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .weekday {
+        font-size: 11px;
+      }
+
+      .container-fluid{
+        margin-top: 0;
+      }
+    }
+
+  </style>
+  
 </head>
 
-<body style="background-color: #212529;">
+<body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
+
+
+
+  <section class="section ms-3 me-3">
+
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img class="logo" src="images/luscinia.png" alt="" width="25" height="24" class="d-inline-block align-text-top" style="margin-right: 4%;">
-        <strong>Aristotle</strong>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="long-thing" style="margin-right: 60%;">
 
 
+      <div class="row flex-row">
+        <div class="col-12 col-lg-3">
+          <div class="timeline mt-3 ms-3">
 
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Information
-              </a>
-
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="notes.html">Parents</a></li>
-                <li><a class="dropdown-item" href="labs.html">Teachers</a></li>
-                <li><a class="dropdown-item" href="textbook.html"> Students </a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Schools </a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Sponsors </a></li>
-            </li>
-          </ul>
-
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About Luscinia</a>
-          </li>
-        </div>
-        <li class="nav-item">
-          <button class="btn btn-outline-secondary login" type="submit">Login</button>
-        </li>
+            <div class="row">
+              <div class="col-12">
 
 
-      </div>
-    </div>
-  </nav>
-  <div class="container-fluid" style="position: absolute; margin-top: 15%;">
-
-    <h5 style="color: white; padding-left: 5%; font-size: 15px;">Lesson timeline</h5>
-    <hr style="color: grey; width: 180px;">
-
-    <ul id="progress">
-      <li class="li-class">
-        <div class="node blue"></div>
-        <p style="color: #03a9f4; margin-bottom: 0; font-size: 14px;">Lesson Resource</p>
-      </li>
-      <li class="li-class">
-        <div class="divider blue"></div>
-      </li>
-      <li class="li-class">
-        <div class="node blue"></div>
-        <p style="color: #03a9f4; margin-bottom: 0; font-size: 14px;"> Progress Quiz</p>
-      </li>
-      <li class="li-class">
-        <div class="divider blue"></div>
-      </li>
-      <li class="li-class">
-        <div class="node blue"></div>
-        <p style="color: #03a9f4; margin-bottom: 0; font-size: 14px;">Lesson Resource</p>
-      </li>
-      <li class="li-class">
-        <div class="divider white"></div>
-      </li>
-      <li class="li-class">
-        <div class="node white"></div>
-        <p style="color: white; margin-bottom: 0; font-size: 14px;">Lesson Resource</p>
-      </li>
-      <li class="li-class">
-        <div class="divider white"></div>
-      </li>
-      <li class="li-class">
-        <div class="node white"></div>
-        <p style="color: white; font-size: 14px;">Written Assignement</p>
-      </li>
-    </ul>
-
-
-    <script>
-      var list = document.getElementById('progress'),
-        next = document.getElementById('next'),
-        clear = document.getElementById('clear'),
-        children = list.children,
-        completed = 0;
-
-      // simulate activating a node
-      next.addEventListener('click', function() {
-
-        // count the number of completed nodes.
-        completed = (completed === 0) ? 1 : completed + 2;
-        if (completed > children.length) return;
-
-        // for each node that is completed, reflect the status
-        // and show a green color!
-        for (var i = 0; i < completed; i++) {
-          children[i].children[0].classList.remove('grey');
-          children[i].children[0].classList.add('green');
-
-          // if this child is a node and not divider,
-          // make it shine a little more
-          if (i % 2 === 0) {
-            children[i].children[0].classList.add('activated');
-          }
-        }
-
-      }, false);
-
-      // clear the activated state of the markers
-      clear.addEventListener('click', function() {
-        for (var i = 0; i < children.length; i++) {
-          children[i].children[0].classList.remove('green');
-          children[i].children[0].classList.remove('activated');
-          children[i].children[0].classList.add('grey');
-        }
-        completed = 0;
-      }, false);
-    </script>
-  </div>
-
-
-
-  <section style="background-color: #212529;">
-    <div class="card" style="border-radius: 10px;">
-      <div style="padding: 5px 0 0px 5px;" class="card-header">
-
-        <h6 style="padding: 10px 0 0px 15px; display: inline-block;"><strong>Math 9</strong></h6>
-        <span>
-          <h6 style="float: right; padding-right: 5%; padding-top: 10px; margin-bottom: 1px;">Thursday, September 3, 2020</h6>
-        </span>
-
-        <div class="dropdown">
-          <button style="border-radius: 10px; font-size: 10px; float: right; padding-top: 0px; border-top: 0px; padding-bottom: 1px; padding-right: 5%;" class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            View Publication information
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="border-radius: 10px;">
-            <li><a class="dropdown-item" href="#">
-                <p style="font-size: 10px; margin-bottom: 1px;"><strong>Author: </strong> Steven West</p>
-                <p style="font-size: 10px;margin-bottom: 1px;"><strong>Publisher: </strong> Math is Fun</p>
-                <p style="font-size: 10px; margin-bottom: 1px;"><strong>Date Published: </strong> 2018-08-12</p>
-                <p style="font-size: 10px;margin-bottom: 1px; "><strong>Last Updated:</strong> 2018-08-12</p>
-                <p style="font-size: 10px; margin-bottom: 1px;"><strong>Publication Location: </strong> Unknown</p>
-                <p style="font-size: 10px;margin-bottom: 1px;"><strong>Source URL: </strong>https://www.mathsisfun.com/algebra/polynomials.html</p>
-              </a></li>
-
-          </ul>
+                <h6 class="lesson-resource ms-5 mb-2 mt-5"><strong>Lesson Resource</strong></h6>
+                <hr>
+                <ul id="progress mt-0">
+                  <li class="li-class">
+                    <div class="node blue"></div>
+                    <p class="headlines ms-3">Lesson Resource</p>
+                  </li>
+                  <li class="li-class">
+                    <div class="divider blue"></div>
+                  </li>
+                  <li class="li-class">
+                    <div class="node blue"></div>
+                    <p class="headlines ms-3">Practice Quiz</p>
+                  </li>
+                  <li class="li-class">
+                    <div class="divider blue"></div>
+                  </li>
+                  <li class="li-class">
+                    <div class="node blue"></div>
+                    <p class="headlines ms-3">Lesson Resource</p>
+                  </li>
+                  <li class="li-class">
+                    <div class="divider white"></div>
+                  </li>
+                  <li class="li-class">
+                    <div class="node white"></div>
+                    <p class="headlines-2 ms-3">Lesson Resource</p>
+                  </li>
+                  <li class="li-class">
+                    <div class="divider white"></div>
+                  </li>
+                  <li class="li-class">
+                    <div class="node white"></div>
+                    <p class="headlines-2 ms-3">Assignement</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
 
-      </div>
-      <div class="card-body">
-        <h5 class="card-title" style="padding-top: 7%; padding-left: 10%;">Polynomials</h5>
+        <div class="col-12 col-lg-9">
+          <div class="card me-3">
+            <div class="card-header pb-0">
+              <div class="row">
+                <div class="col text-start mt-2">
+                  <span class="titles">
+                    <strong>Math 9</strong>
+                  </span>
+                </div>
+                <div class="col text-end">
+                  <span class="weekday">Thursday, September 3, 2020</span>
+                  <div class="dropdown">
+                    <button class="btn btn-sm dropdown-toggle view" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      View Publication information
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="border-radius: 10px;">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <p class="mb-0 dropdown-text"><strong>Author: </strong> Steven West</p>
+                          <p class="mb-0 dropdown-text"><strong>Publisher: </strong> Math is Fun</p>
+                          <p class="mb-0 dropdown-text"><strong>Date Published: </strong> 2018-08-12</p>
+                          <p class="mb-0 dropdown-text"><strong>Last Updated:</strong> 2018-08-12</p>
+                          <p class="mb-0 dropdown-text"><strong>Publication Location: </strong> Unknown</p>
+                          <p class="mb-0 dropdown-text"><strong>Source URL: </strong>https://www.mathsisfun.com/algebra/polynomials.html</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <h6 class="card-subtitle mb-2 text-muted" style="padding-left: 10%;">A polynomial looks like this</h6>
-        <div class="buttons-together;" style="margin-top: 35%; margin-bottom: 10%;">
+            <div class="card-body">
+              <h5 class="card-title mt-5 ms-5">Polynomials</h5>
+              <h6 class="card-subtitle mb-2 text-muted ms-5 mb-5">A polynomial looks like this</h6>
 
-          <button type="button" style="margin-left: 43%; background-color: #03a9f4;" class="btn btn-sm">Back</button>
+              <div class="buttons-together mt-5">
+                <button type="button" class="btn btn-sm back me-1">Back</button>
+                <button class="btn btn-sm next ms-1">Next</button>
+              </div>
+            </div>
 
-          <button style = "background-color: #03a9f4;" type="button" class="btn btn-sm">Next</button>
+
+
+          </div>
         </div>
       </div>
     </div>
+
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
