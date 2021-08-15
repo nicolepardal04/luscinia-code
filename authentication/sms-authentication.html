@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+
+  <style>
+    #password,
+    #user {
+      font-size: 14px;
+    }
+
+    body {
+      background-color: #212529;
+    }
+
+    .center-block {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .br-10 {
+      border-radius: 10px;
+    }
+
+    .card {
+      width: 24rem;
+    }
+
+    p, a{
+      font-size: 14px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="card px-3 py-3 mt-4 br-10 center-block">
+      
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-link active" id="nav-general-login-tab" data-toggle="tab" href="#nav-general-login" role="tab" aria-controls="nav-general-login" aria-selected="true">Login</a>
+        </div>
+      </nav>
+
+      <div class="tab-content" id="nav-tabContent">
+        <div id="nav-general-login" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-login-tab">
+          <br>
+          <h5 class="mt-2 ms-2 me-2">Confirm Authentication</h5>
+          <p>Please enter the code sent to your phone number 604******04 in the space provided below</p>
+          <input class="form-control" type="text" placeholder="Enter code">
+          <a href="https://www.luscinia.ca"style="text-decoration: none;">Resend SMS</a>
+</div>
+<div class="row pt-5">
+<div class="col-12 col-lg-6">
+  <button name="login" type="submit" class="btn btn-primary btn-sm" href="confirm-authentication-html">Login</button>
+</div>
+<div class="col-12 col-lg-6">
+<a href="https://www.luscinia.ca" class="text-end"style="text-decoration: none;">I can't access my device</a>
+
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
